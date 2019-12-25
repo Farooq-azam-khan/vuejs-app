@@ -1,14 +1,18 @@
 {
+  "homepage": "https://farooq-azam-khan.github.io/vuejs-app/",
   "name": "vue-project1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b gh-pages",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "gh-pages": "^2.1.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {

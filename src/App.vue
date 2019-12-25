@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header/>
-    <Todos v-bind:todos="todos" v-on:del-todo="delelteTodo"/>
+    <Header />
+    <Todos v-bind:todos="todos" v-on:del-todo="delelteTodo" />
   </div>
 </template>
 
@@ -15,7 +15,13 @@ export default {
   data: function() {
     return {
       message: "Hello World",
-      todos: [{ id: uuid(), title: "Todo 1", complelted: false }]
+      todos: [
+        {
+          id: uuid(),
+          title: "My First and Last TODO in Vue",
+          complelted: false
+        }
+      ]
     };
   },
   components: {
