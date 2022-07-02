@@ -1,3 +1,2 @@
-# vue-project1
+# vue-project
 - a todo app build with vue cli. 
-- need to deploy to github pages 
